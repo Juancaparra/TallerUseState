@@ -2,14 +2,75 @@
     min-height: 100vh;
     padding: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .StyleHome.light {
-    background-color: #FFF;
-    color: #000;
-  }
-  
-  .StyleHome.dark {
-    background-color: #000;
-    color: #FFF;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.StyleHome.light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.StyleHome.dark {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+}
+
+.StyleHome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.light {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.light:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button.dark {
+    background-color: #444;
+    color: #fff;
+}
+
+button.dark:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.counter {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.seconds-counter {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}

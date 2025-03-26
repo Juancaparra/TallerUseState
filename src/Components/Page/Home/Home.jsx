@@ -14,7 +14,7 @@ export const Home = () => {
 
   return (
     <div className={`StyleHome ${isDarkMode ? 'dark' : 'light'}`}>
-      <h1>Holiiii</h1>
+      <h1>Bienvenido!!!!</h1>
       <DarkLightMode isDarkMode={isDarkMode} toggleMode={toggleMode} />
       <ButtonLikeDislike />
       <ColorGenerator />
